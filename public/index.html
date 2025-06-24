@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Authentication System</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body style="background-color: #212121;">
+
+
+    <div id="registration-from">
+      <p>Registration Form</p>
+      <input type="text" id="username" placeholder="Enter your username" />
+      <input type="email" id="email" placeholder="Enter your email" />
+      <input type="password" id="password" placeholder="Enter your password" />
+      <p id="login" style="text-decoration: underline">login</p>
+      <button type="submit" id="registerFrom">Register</button>
+    </div>
+
+    <p id="deleteAccount"  style="text-decoration: underline;" class="hidden">Delete your Account</p>
+
+    <div id="loginPage" class="hidden">
+      <p>Login Page</p>
+      <input type="email" id="loginEmail" placeholder="Enter your Email" />
+      <input
+        type="password"
+        id="loginPassword"
+        placeholder="Enter your Password"
+      />
+      <button id="loginUser">Login</button>
+    </div>
+
+
+    <div id="OpenUpdatePage" class="hidden">
+      <p id="UpdateProfile" style="text-decoration: underline; cursor: pointer;">Update information</p>
+    </div>
+
+    <div id="delete_account_page" class="hidden">
+      <p>delete your account</p>
+      <input type="email" id="delEmail" placeholder="Enter your Email" />
+      <input
+        type="password"
+        id="delPassword"
+        placeholder="Enter your Password"
+      />
+      <button id="deleteAcc">Delete Account</button>
+    </div>
+
+    <div id="EditPage" class="hidden">
+      <h2>Change Information</h2>
+      <input type="text" id="updateUsername" placeholder="Enter new username"/>
+      <input type="email" id="updateEmail"   placeholder="Enter new Email"/>
+      <button type="submit"  id="updateInfo">save update</button>
+    </div>
+
+  </body>
+  <script src="./index.js"></script>
+</html>
