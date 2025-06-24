@@ -1,7 +1,7 @@
 import { asyncHandler } from "../utiles/AsyncHandler.js";
 import { ApiError } from "../utiles/ApiError.js";
 import { ApiResponse } from "../utiles/ApiResponse.js";
-import { User } from "../user/user.model.js";
+import { User } from "../models/user.model.js";
 const getUserId = asyncHandler(async (req, res, next) => {
   const { email } = req.body;
   if(!email){
